@@ -5,34 +5,58 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Mem Slider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="wrapper">
-      <div class="slides">
-        <input type="radio" name="control" id="btn1" checked />
-        <input type="radio" name="control" id="btn2" />
-        <input type="radio" name="control" id="btn3" />
-        <input type="radio" name="control" id="btn4" />
-        <input type="radio" name="control" id="btn5" />
+      <div class="wrapper__img">
+        <div class="slides">
+          <input type="radio" name="control" id="btn1" checked />
+          <input type="radio" name="control" id="btn2" />
+          <input type="radio" name="control" id="btn3" />
+          <input type="radio" name="control" id="btn4" />
+          <input type="radio" name="control" id="btn5" />
 
-        <div class="slide active">
-          <img src="./assets/images/lion.jpeg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="./assets/images/bird.png" alt="" />
-        </div>
-        <div class="slide">
-          <img src="./assets/images/cat.jpeg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="./assets/images/dog.jpeg" alt="" />
-        </div>
-        <div class="slide">
-          <img src="./assets/images/monkey.jpeg" alt="" />
+          <div class="slide active">
+            <div class="img-wrapper">
+              <img src="./assets/images/lion.jpeg" alt="" />
+            </div>
+            <span class="slide-text">Guess the animal</span>
+          </div>
+          <div class="slide">
+            <div class="img-wrapper">
+              <img src="./assets/images/bird.png" alt="" />
+            </div>
+            <span class="slide-text">Birds at 5 AM</span>
+          </div>
+          <div class="slide">
+            <div class="img-wrapper">
+              <img src="./assets/images/cat.jpeg" alt="" />
+            </div>
+            <span class="slide-text"
+              >I put an orange on my cat and now he looks like an egg</span
+            >
+          </div>
+          <div class="slide">
+            <div class="img-wrapper">
+              <img src="./assets/images/dog.jpeg" alt="" />
+            </div>
+            <span class="slide-text">Cookie...must...get...COOKIE!</span>
+          </div>
+          <div class="slide">
+            <div class="img-wrapper">
+              <img src="./assets/images/monkey.jpeg" alt="" />
+            </div>
+            <span class="slide-text">Waiter: How's the food?<br />Me:</span>
+          </div>
         </div>
       </div>
-
       <div class="navigator">
         <label for="btn1" class="bar"></label>
         <label for="btn2" class="bar"></label>
