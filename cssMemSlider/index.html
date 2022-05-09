@@ -16,70 +16,79 @@
   <body>
     <div class="wrapper">
       <div class="slider-wrapper">
-        <div class="slider">
-          <input type="radio" name="control" id="btn1" checked />
-          <input type="radio" name="control" id="btn2" />
-          <input type="radio" name="control" id="btn3" />
-          <input type="radio" name="control" id="btn4" />
-          <input type="radio" name="control" id="btn5" />
+        <input type="radio" name="control" id="btn1" checked />
+        <input type="radio" name="control" id="btn2" />
+        <input type="radio" name="control" id="btn3" />
+        <input type="radio" name="control" id="btn4" />
+        <input type="radio" name="control" id="btn5" />
 
-          <div class="slider__nav">
-            <div class="navigator">
-              <label for="btn1" class="bar bar1"
-                ><span class="bar-item bar-item1"></span
-              ></label>
-              <label for="btn2" class="bar bar2"
-                ><span class="bar-item bar-item2"></span
-              ></label>
-              <label for="btn3" class="bar bar3"
-                ><span class="bar-item bar-item3"></span
-              ></label>
-              <label for="btn4" class="bar bar4"
-                ><span class="bar-item bar-item4"></span
-              ></label>
-              <label for="btn5" class="bar bar5"
-                ><span class="bar-item bar-item5"></span
-              ></label>
+        <div class="slider-img">
+          <div class="slides">
+            <div class="slide active">
+              <div class="img-wrapper">
+                <img src="./assets/images/lion.jpeg" alt="" />
+              </div>
             </div>
-          </div>
-
-          <div class="slide active">
-            <div class="img-wrapper">
-              <img src="./assets/images/lion.jpeg" alt="" />
+            <div class="slide">
+              <div class="img-wrapper">
+                <img src="./assets/images/bird.png" alt="" />
+              </div>
             </div>
-            <span class="slide-text single-line">Guess the animal</span>
-          </div>
-          <div class="slide">
-            <div class="img-wrapper">
-              <img src="./assets/images/bird.png" alt="" />
+            <div class="slide">
+              <div class="img-wrapper">
+                <img src="./assets/images/cat.jpeg" alt="" />
+              </div>
             </div>
-            <span class="slide-text single-line">Birds at 5 AM</span>
-          </div>
-          <div class="slide">
-            <div class="img-wrapper">
-              <img src="./assets/images/cat.jpeg" alt="" />
+            <div class="slide">
+              <div class="img-wrapper">
+                <img src="./assets/images/dog.jpeg" alt="" />
+              </div>
             </div>
-            <span class="slide-text two-line"
-              >I put an orange on my cat and now he looks like an egg</span
-            >
-          </div>
-          <div class="slide">
-            <div class="img-wrapper">
-              <img src="./assets/images/dog.jpeg" alt="" />
+            <div class="slide">
+              <div class="img-wrapper">
+                <img src="./assets/images/monkey.jpeg" alt="" />
+              </div>
             </div>
-            <span class="slide-text single-line"
-              >Cookie...must...get...COOKIE!</span
-            >
-          </div>
-          <div class="slide">
-            <div class="img-wrapper">
-              <img src="./assets/images/monkey.jpeg" alt="" />
-            </div>
-            <span class="slide-text two-line"
-              >Waiter: How's the food?<br />Me:</span
-            >
           </div>
         </div>
+
+        <div class="slider-extra">
+          <div class="slider-text">
+            <div class="text-slides">
+              <span class="slide-text first">Guess the animal</span>
+              <span class="slide-text">Birds at 5 AM</span>
+              <span class="slide-text"
+                >I put an orange on my cat and now he looks like an egg</span
+              >
+              <span class="slide-text"
+                >Cookie...must...get...COOKIE!</span
+              >
+              <span class="slide-text"
+                >Waiter: How's the food?<br />Me:</span
+              >
+            </text-slides>
+          </div>
+        </div>
+
+        <div class="slider-nav">
+            <div class="navigator">
+              <label for="btn1" class="bar bar1"
+                ><span class="bar-item"></span
+              ></label>
+              <label for="btn2" class="bar bar2"
+                ><span class="bar-item"></span
+              ></label>
+              <label for="btn3" class="bar bar3"
+                ><span class="bar-item"></span
+              ></label>
+              <label for="btn4" class="bar bar4"
+                ><span class="bar-item"></span
+              ></label>
+              <label for="btn5" class="bar bar5"
+                ><span class="bar-item"></span
+              ></label>
+            </div>
+          </div>
       </div>
     </div>
   </body>
