@@ -13,20 +13,25 @@ body {
   background: #addbde;
   font-family: "Architects Daughter", cursive;
   font-size: 3.2rem;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .wrapper {
-  width: 800px;
+  width: 80rem;
+  height: 70rem;
   display: flex;
   flex-direction: column;
-  margin: 15% auto;
+  margin: 0 auto;
   background: #addbde;
 }
 
 .slider-wrapper {
   overflow: hidden;
-  width: 800px;
-  height: 700px;
+  width: 80rem;
+  height: 70rem;
   display: flex;
   flex-direction: column;
 }
@@ -48,9 +53,9 @@ body {
 }
 
 .bar {
-  height: 30px;
-  width: 30px;
-  margin-left: 5px;
+  height: 3rem;
+  width: 3rem;
+  margin-left: 0.5rem;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -60,21 +65,21 @@ body {
 
 .bar:hover > .bar-item {
   background: white;
-  border: 2px solid white;
+  border: 0.2rem solid white;
 }
 
 .bar:active > .bar-item {
   background: #addbde;
-  border: 2px solid white;
+  border: 0.2rem solid white;
 }
 
 .bar-item {
   display: block;
-  height: 13px;
-  width: 13px;
+  height: 1.3rem;
+  width: 1.3rem;
   cursor: pointer;
   background: #4a5d5e;
-  border: 2px solid #4a5d5e;
+  border: 0.2rem solid #4a5d5e;
   border-radius: 100%;
 }
 
@@ -84,8 +89,8 @@ input[type="radio"] {
 
 .slider-img {
   display: flex;
-  width: 800px;
-  height: 550px;
+  width: 80rem;
+  height: 55rem;
   flex-direction: column;
   overflow: hidden;
 }
@@ -129,8 +134,8 @@ input[type="radio"] {
 img {
   width: 100%;
   height: 100%;
-  border-radius: 15px;
-  border: 1px solid white;
+  border-radius: 1.5rem;
+  border: 0.1rem solid white;
 }
 
 #btn1:checked ~ .slider-img > .slides > .active {
@@ -193,21 +198,22 @@ img {
   background: #addbde;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   body {
     font-size: 3rem;
   }
 
   .wrapper {
-    width: 600px;
+    width: 60rem;
+    height: 55rem;
   }
   .slider-wrapper {
-    width: 600px;
+    width: 60rem;
   }
 
   .slider-img {
-    width: 600px;
-    height: 450px;
+    width: 60rem;
+    height: 45rem;
   }
 
   .slider-text {
@@ -218,7 +224,7 @@ img {
 
   .slider-extra {
     flex-direction: column-reverse;
-    margin-top: 5%;
+    margin-top: 7%;
   }
 
   .slider-nav {
@@ -232,18 +238,18 @@ img {
   }
 
   .wrapper {
-    width: 315px;
+    width: 31.5rem;
   }
   .slider-wrapper {
-    width: 315px;
+    width: 31.5rem;
   }
 
   .slider-img {
-    width: 315px;
-    height: 250px;
+    width: 31.5rem;
+    height: 25rem;
   }
 
   .slider-extra {
-    margin-top: 10%;
+    margin-top: 17%;
   }
 }
