@@ -84,7 +84,8 @@ body {
 }
 
 input[type="radio"] {
-  display: none;
+  width: 0;
+  height: 0;
 }
 
 .slider-img {
