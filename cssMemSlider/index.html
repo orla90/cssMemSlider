@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Mem Slider</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="slider-wrapper">
+        <input type="radio" name="control" id="btn1" checked />
+        <input type="radio" name="control" id="btn2" />
+        <input type="radio" name="control" id="btn3" />
+        <input type="radio" name="control" id="btn4" />
+        <input type="radio" name="control" id="btn5" />
+
+        <div class="slider-img">
+          <div class="slides">
+            <div class="slide active">
+              <div class="img-wrapper">
+                <img src="./assets/images/lion.jpeg" alt="" />
+              </div>
+            </div>
+            <div class="slide">
+              <div class="img-wrapper">
+                <img src="./assets/images/bird.png" alt="" />
+              </div>
+            </div>
+            <div class="slide">
+              <div class="img-wrapper">
+                <img src="./assets/images/cat.jpeg" alt="" />
+              </div>
+            </div>
+            <div class="slide">
+              <div class="img-wrapper">
+                <img src="./assets/images/dog.jpeg" alt="" />
+              </div>
+            </div>
+            <div class="slide">
+              <div class="img-wrapper">
+                <img src="./assets/images/monkey.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-extra">
+          <div class="slider-text">
+            <div class="text-slides">
+              <span class="slide-text first">Guess the animal</span>
+              <span class="slide-text">Birds at 5 AM</span>
+              <span class="slide-text"
+                >I put an orange on my cat and now he looks like an egg</span
+              >
+              <span class="slide-text"
+                >Cookie...must...get...COOKIE!</span
+              >
+              <span class="slide-text"
+                >Waiter: How's the food?<br />Me:</span
+              >
+            </text-slides>
+          </div>
+        </div>
+
+        <div class="slider-nav">
+            <div class="navigator">
+              <label for="btn1" class="bar bar1"
+                ><span class="bar-item"></span
+              ></label>
+              <label for="btn2" class="bar bar2"
+                ><span class="bar-item"></span
+              ></label>
+              <label for="btn3" class="bar bar3"
+                ><span class="bar-item"></span
+              ></label>
+              <label for="btn4" class="bar bar4"
+                ><span class="bar-item"></span
+              ></label>
+              <label for="btn5" class="bar bar5"
+                ><span class="bar-item"></span
+              ></label>
+            </div>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  overflow: hidden;
+}
+
+body {
+  background: #addbde;
+  font-family: "Architects Daughter", cursive;
+  font-size: 3.2rem;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  width: 80rem;
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  background: #addbde;
+}
+
+.slider-wrapper {
+  overflow: hidden;
+  width: 80rem;
+  height: 70rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.img-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.slider-nav {
+  background: #addbde;
+  height: 100%;
+  padding: 1% 0 0;
+}
+
+.navigator {
+  display: flex;
+  transition: 0.5s ease-out;
+}
+
+.bar {
+  height: 3rem;
+  width: 3rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.bar:hover > .bar-item {
+  background: white;
+  border: 0.2rem solid white;
+}
+
+.bar:active > .bar-item {
+  background: #addbde;
+  border: 0.2rem solid white;
+}
+
+.bar-item {
+  display: block;
+  height: 1.3rem;
+  width: 1.3rem;
+  cursor: pointer;
+  background: #4a5d5e;
+  border: 0.2rem solid #4a5d5e;
+  border-radius: 100%;
+}
+
+input[type="radio"] {
+  width: 0;
+  height: 0;
+}
+
+.slider-img {
+  display: flex;
+  width: 80rem;
+  height: 55rem;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.slides {
+  height: 100%;
+  width: 500%;
+  display: flex;
+}
+
+.slider-extra {
+  display: flex;
+  height: 16%;
+  padding: 3% 0 0;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.slide {
+  width: 20%;
+  transition: 0.5s ease-out;
+}
+
+.slider-text {
+  width: 60%;
+  color: #4a5d5e;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-slides {
+  display: flex;
+  width: 665%;
+}
+
+.slide-text {
+  width: 20%;
+  transition: 0.5s ease-out;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  border: 0.1rem solid white;
+}
+
+#btn1:checked ~ .slider-img > .slides > .active {
+  margin-left: 0;
+}
+
+#btn2:checked ~ .slider-img > .slides > .active {
+  margin-left: -20%;
+}
+
+#btn3:checked ~ .slider-img > .slides > .active {
+  margin-left: -40%;
+}
+
+#btn4:checked ~ .slider-img > .slides > .active {
+  margin-left: -60%;
+}
+
+#btn5:checked ~ .slider-img > .slides > .active {
+  margin-left: -80%;
+}
+
+#btn1:checked ~ .slider-extra > .slider-text > .text-slides > .first {
+  margin-left: 0;
+}
+
+#btn2:checked ~ .slider-extra > .slider-text > .text-slides > .first {
+  margin-left: -20%;
+}
+
+#btn3:checked ~ .slider-extra > .slider-text > .text-slides > .first {
+  margin-left: -40%;
+}
+
+#btn4:checked ~ .slider-extra > .slider-text > .text-slides > .first {
+  margin-left: -60%;
+}
+
+#btn5:checked ~ .slider-extra > .slider-text > .text-slides > .first {
+  margin-left: -80%;
+}
+
+#btn1:checked ~ .slider-extra > .slider-nav > .navigator > .bar1 > .bar-item {
+  background: #addbde;
+}
+
+#btn2:checked ~ .slider-extra > .slider-nav > .navigator > .bar2 > .bar-item {
+  background: #addbde;
+}
+
+#btn3:checked ~ .slider-extra > .slider-nav > .navigator > .bar3 > .bar-item {
+  background: #addbde;
+}
+
+#btn4:checked ~ .slider-extra > .slider-nav > .navigator > .bar4 > .bar-item {
+  background: #addbde;
+}
+
+#btn5:checked ~ .slider-extra > .slider-nav > .navigator > .bar5 > .bar-item {
+  background: #addbde;
+}
+
+@media (max-width: 1024px) {
+  body {
+    font-size: 3rem;
+  }
+
+  .wrapper {
+    width: 60rem;
+    height: 55rem;
+  }
+  .slider-wrapper {
+    width: 60rem;
+  }
+
+  .slider-img {
+    width: 60rem;
+    height: 45rem;
+  }
+
+  .slider-text {
+    width: 75%;
+    padding-top: 1%;
+    text-align: center;
+  }
+
+  .slider-extra {
+    flex-direction: column-reverse;
+    margin-top: 7%;
+  }
+
+  .slider-nav {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    font-size: 2.4rem;
+  }
+
+  .wrapper {
+    width: 31.5rem;
+  }
+  .slider-wrapper {
+    width: 31.5rem;
+  }
+
+  .slider-img {
+    width: 31.5rem;
+    height: 25rem;
+  }
+
+  .slider-extra {
+    margin-top: 17%;
+  }
+}
